@@ -20,6 +20,6 @@ public class Question2
     
     double bmi = weight / (height * height);
     
-    System.out.printf("\nYour BMI is %.1f", bmi);
+    System.out.printf("\nYour BMI is %.1f\n", bmi);
   }
 }
