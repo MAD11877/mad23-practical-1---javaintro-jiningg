@@ -15,11 +15,11 @@ public class Question2
     System.out.print("Enter your height: ");
     double height = in.nextDouble();
     
-    System.out.print("\nEnter your weight: ");
+    System.out.print("Enter your weight: ");
     double weight = in.nextDouble();
     
     double bmi = weight / (height * height);
     
-    System.out.printf("\nYour BMI is %.1f\n", bmi);
+    System.out.printf("Your BMI is %.1f", bmi);
   }
 }
