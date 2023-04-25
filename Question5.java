@@ -28,14 +28,33 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     
-    System.out.print("Enter number of integers: ");
     int num = in.nextInt();
+    int[] integers = new int[num];
     
-    List<Integer> nums = new ArrayList<>();
-    for (int i = 0; i<num; i++) 
+    for (int i = 0; i < num; i++) 
     {
-      System.out.printf("Enter integer %d: ", i+1);
-      nums.add(in.nextInt());
+      integers[i] = in.nextInt();
     }
+    
+    int mode = 0;
+    int maxcount = 0;
+    
+    for (int i = 0; i < num; i++)
+    {
+      int count = 0;
+      for (int j = 0; i < num; j++)
+      {
+        if (integers[j] == integers[i])
+        {
+          count++;
+        }
+      }
+      if (count > maxcount)
+      {
+        maxcount = count;
+        mode = integers[i];
+      }
+    }
+    System.out.println(mode);
   }
 }
