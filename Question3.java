@@ -12,11 +12,10 @@ public class Question3
      
     Scanner in = new Scanner(System.in);
     
-    System.out.print("Enter an integer: ");
     int num = in.nextInt();
     
     int multiply = num * num;
     
-    System.out.printf("%d multiplied by iteself is %d\n", num, multiply);
+    System.out.println(multiply);
   }
 }
