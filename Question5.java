@@ -28,5 +28,14 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     
+    System.out.print("Enter number of integers: ");
+    int num = in.nextInt();
+    
+    List<Integer> nums = new ArrayList<>();
+    for (int i = 0; i<num; i++) 
+    {
+      System.out.printf("Enter integer %d: ", i+1);
+      nums.add(in.nextInt());
+    }
   }
 }
