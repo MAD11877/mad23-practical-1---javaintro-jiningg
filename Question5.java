@@ -28,5 +28,33 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     
+    int num = in.nextInt();
+    int[] integers = new int[num];
+    
+    for (int i = 0; i < num; i++) 
+    {
+      integers[i] = in.nextInt();
+    }
+    
+    int mode = 0;
+    int maxcount = 0;
+    
+    for (int i = 0; i < num; i++)
+    {
+      int count = 0;
+      for (int j = 0; j < num; j++)
+      {
+        if (integers[j] == integers[i])
+        {
+          count++;
+        }
+      }
+      if (count > maxcount)
+      {
+        maxcount = count;
+        mode = integers[i];
+      }
+    }
+    System.out.println(mode);
   }
 }

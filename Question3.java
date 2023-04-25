@@ -12,5 +12,10 @@ public class Question3
      
     Scanner in = new Scanner(System.in);
     
+    int num = in.nextInt();
+    
+    int multiply = num * num;
+    
+    System.out.println(multiply);
   }
 }
