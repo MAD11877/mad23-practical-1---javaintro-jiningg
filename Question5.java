@@ -42,7 +42,7 @@ public class Question5
     for (int i = 0; i < num; i++)
     {
       int count = 0;
-      for (int j = 0; i < num; j++)
+      for (int j = 0; j < num; j++)
       {
         if (integers[j] == integers[i])
         {
